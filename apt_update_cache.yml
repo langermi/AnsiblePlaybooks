@@ -2,6 +2,7 @@
 - name: Update Aall packages on server
   hosts: all
   become: yes
+  become_method: su
 
   tasks:
 
