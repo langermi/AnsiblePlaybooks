@@ -1,8 +1,8 @@
 ---
-- name: Update Aall packages on server
+- name: Update All packages on server
   hosts: all
   become: yes
-  become_method: su
+  #become_method: su
 
   tasks:
 
