@@ -1,6 +1,7 @@
 ---
 - name: Update All packages on server
   become: yes
+  hosts: all
 
   tasks:
 
