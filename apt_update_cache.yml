@@ -1,7 +1,11 @@
 ---
-- name: Update and upgrade apt packages
-  become: true
-  ansible.builtin.apt:
-    upgrade: yes
-    update_cache: yes
-    cache_valid_time: 86400 #One day
+- name: Update Aall packages on server
+  hosts: all
+
+  tasks:
+
+  - name: Run apt-get update
+    ansible.builtin.apt:
+      update_cache: yes
+      cache_valid_time: 3600
+      upgrade: full
