@@ -1,6 +1,7 @@
 ---
 - name: Update Aall packages on server
   hosts: all
+  become: yes
 
   tasks:
 
